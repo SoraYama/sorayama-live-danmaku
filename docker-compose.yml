@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sorayama-live-danmaku:
+    build: .
+    image: danmaku
+    container_name: 'danmaku'
+    volumes:
+      - defaultLog:/app/logs
+
+volumes:
+  defaultLog:
