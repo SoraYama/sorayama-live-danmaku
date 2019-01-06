@@ -5,6 +5,8 @@ services:
     build: .
     image: danmaku
     container_name: 'danmaku'
+    ports:
+      - '2020:2020'
     volumes:
       - defaultLog:/app/logs
 
